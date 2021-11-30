@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">OEASystem</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+
+    <string-array name="questiontypes">
+        <item>True False Question</item>
+        <item>Multiple Choices Question</item>
+        <item>Open Ended Question</item>
+    </string-array>
+</resources>

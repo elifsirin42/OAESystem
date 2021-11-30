@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/ebtn"
+        android:layout_width="49dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:text="E"
+        app:layout_constraintEnd_toStartOf="@+id/echoice"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dbtn" />
+
+    <Button
+        android:id="@+id/dbtn"
+        android:layout_width="49dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="14dp"
+        android:text="D"
+        app:layout_constraintBottom_toTopOf="@+id/ebtn"
+        app:layout_constraintEnd_toStartOf="@+id/dchoice"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbtn" />
+
+    <EditText
+        android:id="@+id/questionet"
+        android:layout_width="274dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="68dp"
+        android:background="#8E6262"
+        android:ems="10"
+        android:hint="Write a Multiple Choice Quesiton"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:inputType="textMultiLine"
+        android:overScrollMode="always"
+        android:scrollbarStyle="insideInset"
+        android:scrollbars="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/abtn"
+        android:layout_width="49dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="42dp"
+        android:text="A"
+        app:layout_constraintEnd_toStartOf="@+id/achoice5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questionet" />
+
+    <Button
+        android:id="@+id/bbtn"
+        android:layout_width="49dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="14dp"
+        android:text="B"
+        app:layout_constraintBottom_toTopOf="@+id/cbtn"
+        app:layout_constraintEnd_toStartOf="@+id/bchoice"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/abtn" />
+
+    <Button
+        android:id="@+id/cbtn"
+        android:layout_width="49dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:text="C"
+        app:layout_constraintEnd_toStartOf="@+id/cchoice"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bbtn" />
+
+    <EditText
+        android:id="@+id/cchoice"
+        android:layout_width="191dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:background="#BA9393"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:overScrollMode="always"
+        android:scrollbarStyle="insideInset"
+        android:scrollbars="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cbtn"
+        app:layout_constraintTop_toBottomOf="@+id/bchoice" />
+
+    <EditText
+        android:id="@+id/echoice"
+        android:layout_width="191dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:background="#BA9393"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:overScrollMode="always"
+        android:scrollbarStyle="insideInset"
+        android:scrollbars="vertical"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ebtn"
+        app:layout_constraintTop_toBottomOf="@+id/dchoice" />
+
+    <EditText
+        android:id="@+id/bchoice"
+        android:layout_width="191dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="14dp"
+        android:background="#BA9393"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:overScrollMode="always"
+        android:scrollbarStyle="insideInset"
+        android:scrollbars="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bbtn"
+        app:layout_constraintTop_toBottomOf="@+id/achoice5" />
+
+    <EditText
+        android:id="@+id/dchoice"
+        android:layout_width="191dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="21dp"
+        android:background="#BA9393"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:overScrollMode="always"
+        android:scrollbarStyle="insideInset"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/echoice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/dbtn"
+        app:layout_constraintTop_toBottomOf="@+id/cchoice" />
+
+    <EditText
+        android:id="@+id/achoice5"
+        android:layout_width="191dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginBottom="14dp"
+        android:background="#BA9393"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:overScrollMode="always"
+        android:scrollbarStyle="insideInset"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/bchoice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/abtn"
+        app:layout_constraintTop_toBottomOf="@+id/questionet" />
+
+    <Button
+        android:id="@+id/savebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/fivebtn"
+        app:layout_constraintStart_toStartOf="@+id/fourbtn"
+        app:layout_constraintTop_toBottomOf="@+id/fourbtn" />
+
+    <Button
+        android:id="@+id/fourbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="four choices"
+        app:layout_constraintEnd_toStartOf="@+id/fivebtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/echoice" />
+
+    <Button
+        android:id="@+id/fivebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Five Choices"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fourbtn"
+        app:layout_constraintTop_toBottomOf="@+id/echoice" />
+</androidx.constraintlayout.widget.ConstraintLayout>

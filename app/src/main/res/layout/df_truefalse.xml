@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7AFFEB3B">
+
+    <EditText
+        android:id="@+id/truefalsequestionet"
+        android:layout_width="317dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="#886C27B0"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Write your True False Question"
+        android:inputType="textMultiLine"
+        android:overScrollMode="always"
+        android:scrollbarStyle="insideInset"
+        android:scrollbars="vertical"
+        android:textColor="#C12B2B2B"
+        android:textColorHint="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/falsebtn"
+        android:layout_width="111dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:background="#F30909"
+        android:text="False"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/truefalsequestionet"
+        app:layout_constraintTop_toBottomOf="@+id/truefalsequestionet"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/truebtn"
+        android:layout_width="111dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="32dp"
+        android:background="#73A13E"
+        android:text="True"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/truefalsequestionet"
+        app:layout_constraintTop_toBottomOf="@+id/truefalsequestionet" />
+
+    <Button
+        android:id="@+id/savetfbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:background="#E6009688"
+        android:text="Save"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/falsebtn"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/truebtn" />
+
+    <Button
+        android:id="@+id/dort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/truebtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
